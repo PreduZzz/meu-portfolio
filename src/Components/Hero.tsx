@@ -4,7 +4,7 @@ import foto from "../assets/foto-pedro.jpg";
 
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/pedro-augusto-pereira-3ba0b336", Icon: FaLinkedin },
-  { label: "GitHub", href: "https://github.com/PredruZzz", Icon: FaGithub },
+  { label: "GitHub", href: "https://github.com/PreduZzz", Icon: FaGithub },
   { label: "Instagram", href: "https://instagram.com/predu_augusto", Icon: FaInstagram },
   { label: "E-mail", href: "mailto:pedroaugustopereira2610@gmail.com", Icon: LuMail },
 ];
