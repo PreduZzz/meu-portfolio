@@ -3,10 +3,10 @@ import { LuArrowUpRight, LuMail } from "react-icons/lu";
 import foto from "../assets/foto-pedro.jpg";
 
 const socials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/pedro-augusto-pereira-3ba0b336", Icon: FaLinkedin },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/pedro-augusto-pereira-3ba0b3356", Icon: FaLinkedin },
   { label: "GitHub", href: "https://github.com/PreduZzz", Icon: FaGithub },
   { label: "Instagram", href: "https://instagram.com/predu_augusto", Icon: FaInstagram },
-  { label: "E-mail", href: "mailto:pedroaugustopereira2610@gmail.com", Icon: LuMail },
+  { label: "E-mail", href: "https://mail.google.com/mail/?view=cm&to=pedroaugustopereira2610@gmail.com", Icon: LuMail },
 ];
 
 const values = ["Foco", "Disciplina", "Evolução", "Resultados"];
@@ -57,20 +57,19 @@ export default function Hero() {
           </div>
 
           <ul className="mt-8 flex gap-5">
-            {socials.map(({ label, href, Icon }) => (
-              <li key={label}>
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={label}
-                  className="text-2xl text-slate-300 transition hover:text-blue-400"
-                >
-                  <Icon />
-                </a>
-              </li>
-            ))}
-          </ul>
+  {socials.map(({ label, href, Icon }) => (
+    <li key={label}>
+      <a
+        href={href}
+        {...(href.startsWith("http") && { target: "_blank", rel: "noreferrer" })}
+        aria-label={label}
+        className="text-2xl text-slate-300 transition hover:text-blue-400"
+      >
+        <Icon />
+      </a>
+    </li>
+  ))}
+</ul>
         </div>
       </div>
 
