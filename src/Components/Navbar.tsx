@@ -61,7 +61,7 @@ export default function Navbar() {
           ))}
         </ul>
                 <a
-          href="/curriculo-pedro-augusto.pdf/"
+          href="/curriculo-pedro-augusto.pdf"
           download
           className="hidden items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500 md:flex"
         >
