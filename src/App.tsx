@@ -4,6 +4,8 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -15,8 +17,9 @@ export default function App() {
         <Skills />
         <Projects />
         <Resume />
-        <section id="contato" className="flex h-screen items-center justify-center">Contato</section>
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }
