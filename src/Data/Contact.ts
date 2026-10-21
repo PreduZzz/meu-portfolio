@@ -6,4 +6,5 @@ export const contact = {
   instagram: "https://instagram.com/predu_augusto",
 };
 
-export const gmailUrl = `https://mail.google.com/mail/?view=cm&to=${contact.email}`;
+export const emailUrl = `mailto:${contact.email}`;
+export const gmailUrl = emailUrl;

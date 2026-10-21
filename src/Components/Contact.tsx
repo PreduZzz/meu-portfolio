@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { LuCheck, LuCopy, LuMail, LuMapPin } from "react-icons/lu";
-import { contact, gmailUrl } from "../Data/Contact";
+import { contact, emailUrl } from "../Data/Contact";
 
 const items = [
   { label: "E-mail", value: contact.email, Icon: LuMail },
@@ -40,9 +40,7 @@ export default function Contact() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href={gmailUrl}
-              target="_blank"
-              rel="noreferrer"
+              href={emailUrl}
               className="flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-500"
             >
               <LuMail aria-hidden /> Enviar e-mail
@@ -75,8 +73,10 @@ export default function Contact() {
                 {href ? (
                   <a
                     href={href}
-                    target="_blank"
-                    rel="noreferrer"
+                    {...(href.startsWith("http") && {
+                      target: "_blank",
+                      rel: "noreferrer",
+                    })}
                     className="font-medium text-white transition hover:text-blue-400"
                   >
                     {value}

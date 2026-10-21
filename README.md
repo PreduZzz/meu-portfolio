@@ -1,32 +1,103 @@
-# React + TypeScript + Vite
+# Portfólio — Pedro Augusto
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Meu portfólio pessoal, desenvolvido para reunir um pouco sobre mim, as tecnologias que estudo, meus projetos e formas de entrar em contato.
 
-Currently, two official plugins are available:
+Sou estudante de **Análise e Desenvolvimento de Sistemas** e estou em busca de uma oportunidade de **estágio em TI**. Criei este site para colocar em prática o que venho aprendendo sobre desenvolvimento web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## O que você encontra aqui
 
-## React Compiler
+- **Início:** uma apresentação rápida e links para as principais seções.
+- **Sobre mim:** minha formação, objetivos e interesses.
+- **Tecnologias e ferramentas:** conhecimentos que venho desenvolvendo.
+- **Projetos:** trabalhos pessoais, com acesso ao código no GitHub.
+- **Currículo:** opção de visualizar ou baixar meu currículo em PDF.
+- **Contato:** e-mail e redes profissionais.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O site tem layout responsivo, menu para dispositivos móveis e navegação entre as seções da página.
 
-## Expanding the Oxlint configuration
+## Tecnologias utilizadas
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **React** — construção da interface com componentes.
+- **TypeScript** — desenvolvimento com tipagem estática.
+- **Tailwind CSS** — estilização e responsividade.
+- **Vite** — ambiente de desenvolvimento e build.
+- **React Icons** — ícones utilizados na interface.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Como executar o projeto
+
+Você precisa ter o **Node.js** e o **npm** instalados.
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/PreduZzz/meu-portfolio.git
+   ```
+
+2. Acesse a pasta do projeto:
+
+   ```bash
+   cd meu-portfolio
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+Depois, abra no navegador o endereço local exibido no terminal.
+
+Para gerar a versão de produção, execute:
+
+```bash
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Para verificar o código com o linter:
+
+```bash
+npm run lint
+```
+
+## Organização do projeto
+
+```text
+public/
+  curriculo-pedro-augusto.pdf
+  favicon.svg
+src/
+  assets/
+  Components/
+    About.tsx
+    Contact.tsx
+    Footer.tsx
+    Hero.tsx
+    Navbar.tsx
+    Projects.tsx
+    Resume.tsx
+    Skills.tsx
+  Data/
+    Contact.ts
+    Projects.ts
+    Skills.ts
+  App.tsx
+  main.tsx
+```
+
+Os componentes estão separados por seção, enquanto a pasta `Data` reúne informações de contato, projetos e tecnologias exibidas no site.
+
+## Contato
+
+- **GitHub:** [PreduZzz](https://github.com/PreduZzz)
+- **LinkedIn:** [Pedro Augusto Pereira](https://www.linkedin.com/in/pedro-augusto-pereira-3ba0b3356)
+- **E-mail:** [pedroaugustopereira2610@gmail.com](mailto:pedroaugustopereira2610@gmail.com)
+
+---
+
+*Projeto pessoal desenvolvido como parte da minha evolução nos estudos de programação.*

@@ -1,12 +1,13 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { LuArrowUpRight, LuMail } from "react-icons/lu";
 import foto from "../assets/foto-pedro.jpg";
+import { emailUrl } from "../Data/Contact";
 
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/pedro-augusto-pereira-3ba0b3356", Icon: FaLinkedin },
   { label: "GitHub", href: "https://github.com/PreduZzz", Icon: FaGithub },
   { label: "Instagram", href: "https://instagram.com/predu_augusto", Icon: FaInstagram },
-  { label: "E-mail", href: "https://mail.google.com/mail/?view=cm&to=pedroaugustopereira2610@gmail.com", Icon: LuMail },
+  { label: "E-mail", href: emailUrl, Icon: LuMail },
 ];
 
 const values = ["Foco", "Disciplina", "Evolução", "Resultados"];
