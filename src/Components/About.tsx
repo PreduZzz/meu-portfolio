@@ -3,7 +3,7 @@ import foto from "../assets/foto-pedro.jpg";
 
 // EDITE: seus dados reais
 const info = [
-  { label: "Idade", value: "25 Anos", Icon: LuCake },
+  { label: "Idade", value: "25 anos", Icon: LuCake },
   { label: "Formação", value: "Análise e Desenvolvimento de Sistemas", Icon: LuGraduationCap },
   { label: "Localização", value: "Curitiba - PR", Icon: LuMapPin },
   { label: "Objetivo", value: "Busco uma oportunidade de estágio na área de TI, onde eu possa aplicar meus conhecimentos, adquirir experiência prática e continuar evoluindo profissionalmente.", Icon: LuTarget },
